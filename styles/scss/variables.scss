@@ -1,0 +1,71 @@
+
+/*----------COLORS------------------*/
+
+$section-bg-color:#faf8fb;
+$footer-bg:#65269d;
+$input-border-color:#cccccc;
+
+$section-title-color:#7f38bd;
+
+$btn-red-color:#fb0275;
+$violet:#883eca;
+$white:#fff;
+
+$link-color:#3594dd;
+$title-color:#383d52;
+$main-text-color:#5e606a;
+  /*---------break-points-----------------------------------*/
+
+$lg:1170px;
+
+
+
+/*----------font-weight-------------*/
+
+$light:300;
+$regular:400;
+$medium:500;
+$semi-bold:600;
+$bold:700;
+$extra-bold:800;
+
+/*-----------------------------МИКСИ$maНы------------------------------*/
+
+@mixin fz($px){
+
+  font-size:($px/16px)+0rem;
+}
+
+
+
+
+@mixin retina($density: 2) {
+  @media only screen and (-webkit-min-device-pixel-ratio: $density),
+  only screen and (min--moz-device-pixel-ratio: $density),
+  only screen and (-o-min-device-pixel-ratio: #{$density}/1),
+  only screen and (min-device-pixel-ratio: $density),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: #{$density}dppx) {
+    @content;
+  }
+}
+
+
+/*---------------Добавляет  ссылкам эффекты наведения затемняя и засветляя выбранный цвет----------*/
+
+@mixin hover($color){
+
+  &:hover,
+  &:focus{
+    color: lighten($color,20%);
+    outline: 1px solid $color;
+    outline-offset: 10px;
+  }
+
+
+  &:active{
+    color:  darken($color,20%);
+    outline: 1px solid $color;
+    outline-offset: 10px;
+  }
+}

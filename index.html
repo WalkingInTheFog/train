@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<!-- ДОДЕЛАТЬ ФАВИКОНКИ -->
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="description" content="Морские прогулки по Черному морю">
+
+	<meta name="keywords" content="Морские прогулки по Черному морю">
+
+	<link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+	<meta name = "apple-mobile-web-app-title" content = "Food House"><!-- заголовок закладки, если не указывать то возьмет title документа-->
+
+	<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+
+	<link rel="icon" type="image/png" href="images/favicons/android-chrome-96x96.png" sizes="192x192">
+
+
+	<meta name="msapplication-square70x70logo" content="img/content/icons/mstile-70x70.png" /> <!-- для вин рекомендуют делать плотность 1,8 т.е. картинка в 2 раза больше указанного размера-->
+	<meta name="msapplication-square150x150logo" content="img/content/icons/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="img/content/icons/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="img/content/icons/mstile-310x310.png" />
+	<meta name="application-name" content="Food House"><!-- имя плитки в панели виндовса-->
+	<meta name="msapplication-tooltip" content="Лучший ресторан"><!-- всплывающая подсказка плитки в панели виндовса-->
+
+
+	<!-- не забыть оформить в конце------------------------------------------------------------- -->
+
+	<!--d=FACEBOOK SHARE -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://example.com/page.html">
+	<meta property="og:title" content="Content Title">
+	<meta property="og:image" content="https://example.com/image.jpg">
+	<meta property="og:description" content="Description Here">
+	<meta property="og:site_name" content="Site Name">
+	<meta property="og:locale" content="ru_RU">
+
+
+	<!--TWEETTER share -->
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@site_account">
+	<meta name="twitter:creator" content="@individual_account">
+	<meta name="twitter:url" content="https://example.com/page.html">
+	<meta name="twitter:title" content="Content Title">
+	<meta name="twitter:description" content="Описание контента короче 200 символов">
+	<meta name="twitter:image" content="https://example.com/image.jpg">
+
+	<!-- не забыть оформить в конце------------------------------------------------------------- -->
+
+	<link rel="stylesheet" href="styles/css/main.css">
+
+	<title>Прогулки по Черному морю</title>
+
+</head>
+
+<body>
+
+	<header class="main-header">
+
+		<div class="container">
+
+			<nav class="main-nav">
+
+				<button class="main-nav__trigger" aria-label="Открыть меню либо закрыть" type="button"></button>
+
+				<!--.main-menu-list--active открывает меню -->
+
+				<ul class="main-menu-list ">
+					<li class="main-menu-list__item"><a href="#" title="Популярные маршруты" class="main-menu-list__link">Популярные маршруты</a></li>
+					<li class="main-menu-list__item"><a href="#" title="Расписание рейсов" class="main-menu-list__link">Расписание рейсов</a></li>
+					<li class="main-menu-list__item"><a href="#" title="Забронированные рейсы" class="main-menu-list__link">Забронированные рейсы</a></li>
+					<li class="main-menu-list__item"><a href="#" title="Вход для партнеров" class="main-menu-list__link">Вход для партнеров</a></li>
+					<li class="main-menu-list__item"><a href="#" title="О компании" class="main-menu-list__link">О компании</a></li>
+					<li class="main-menu-list__item"><a href="#" title="Контакты" class="main-menu-list__link">Контакты</a></li>
+				</ul>
+
+				<div class="choice-item">
+					<!-- authorization-list__item--active-->
+
+						<ul class="authorization-list">
+
+							<!-- authorization-list__item--active-->
+							<li class="authorization-list__item ">
+
+								<a href="#" title="Перейти настраницу входа" class="authorization-list__link">Вход</a> / <a href="#" class="authorization-list__link" title="Перейти настраницу регистрации">Регистрация</a>
+
+							</li>
+
+							<li class="authorization-list__item authorization-list__item--active ">
+
+								<a href="#" title="" class="authorization-list__link ">
+
+									<svg class="authorization-list__icon" width="15" height="15">
+										<use xlink:href="images/decor/symbols.svg#005-man-user"/>
+									</svg>
+
+									<span class="authorization-list__text">Василий Пупкин</span>
+								</a>
+
+								<div class="authorization-list__link-wrap">
+									<a href="#" title="" class="authorization-list__link authorization-list__link--small">Настройки</a>
+									<a href="#" title="" class="authorization-list__link authorization-list__link--small">Выход</a>
+								</div>
+
+							</li>
+						</ul>
+
+					</div>
+
+				<div class="choice-item ">
+
+							<ul class="currency-list">
+								<!--currency-list__item--active  -->
+								<li class="currency-list__item currency-list__item--active">
+
+									<a href="#" class="currency-list__link">
+
+										<svg class="currency-list__icon" width="15" height="15">
+											<use xlink:href="images/decor/symbols.svg#006-ruble-currency-sign"/>
+										</svg>
+
+										<span class="currency-list__text">Рубль</span>
+									</a>
+
+								</li>
+
+								<li class="currency-list__item">
+
+									<a href="#" class="currency-list__link">
+
+										<svg class="currency-list__icon" width="15" height="15">
+											<use xlink:href="images/decor/symbols.svg#007-dollar-symbol"/>
+										</svg>
+
+										<span class="currency-list__text">Доллар</span>
+									</a>
+
+								</li>
+
+								<li class="currency-list__item">
+
+									<a href="#" class="currency-list__link">
+
+										<svg class="currency-list__icon" width="15" height="15">
+											<use xlink:href="images/decor/symbols.svg#008-euro"/>
+										</svg>
+
+										<span class="currency-list__text">Евро</span>
+									</a>
+
+								</li>
+							</ul>
+
+					</div>
+
+				<!--language-choice-list__item--active -->
+				<div class="choice-item">
+						<!--language-choice-list__item--active  -->
+						<ul class="language-choice-list">
+							<li class="language-choice-list__item language-choice-list__item--active "><a href="#" class="language-choice-list__link" title="бла бла">Ru</a></li>
+							<li class="language-choice-list__item"><a href="#" class="language-choice-list__link" title="бла бла">En</a></li>
+						</ul>
+
+				</div>
+
+				<div class="support-number">
+
+					<a class="support-number__link" title="Позвонить" href="tel:+7-922-885-22-17">8(922)8852217</a>
+
+					<p class="support-number__desc"> Круглосуточная поддержка</p>
+
+				</div>
+
+			</nav>
+
+			<picture class="main-logo">
+
+				<!--
+
+				<source media="(max-width:750px)" srcset="images/content/head-logo-mob.png, images/content/head-logo-mob@x2.png 2x, images/content/head-logo-mob@x3.png 3x">
+
+				<source media="(min-width:750px)" srcset="images/content/head-logo.png, images/content/head-logo@x2.png 2x, images/content/head-logo@x3.png 3x">
+				-->
+
+				<img src="images/content/logo.png" srcset="images/content/logo.png, images/content/logo@x2.png 2x" alt="Ваш компас на Черном море" width="88" height="88">
+
+			</picture>
+
+			<h1 class="main-title">
+				<span>Морские прогулки</span><br>
+				<span>По Черному морю</span>
+			</h1>
+
+			<a class="btn" title="Перейти на страницу выбора круиза" href="#">Выбрать круиз</a>
+
+		</div>
+
+	</header>
+
+	<main>
+
+		<section class="catalog">
+
+			<div class="catalog__head-wrap">
+
+				<h2 class="section-title">Каталог круизов</h2>
+
+				<div class="sort-filter__wrap">
+
+					<span>Сортировать круизы по:</span>
+					<ul class="sort-filter__list">
+						<li class="sort-filter__item ">Цене</li>
+						<li class="sort-filter__item sort-filter__item--current">Популярности</li>
+						<li class="sort-filter__item">Кол-ву заказов</li>
+						<li class="sort-filter__item">Скидке</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="container">
+
+				<div class="container__left-col">
+
+					<a href="#" class="cruise-item cruise-item--big cruise-item--hit">
+
+
+						<img class="cruise-item__img" src="images/content/anapa.jpg" srcset="images/content/anapa.jpg, images/content/anapa@2x.jpg 2x" alt="Морской круиз в Анапу" width="555" height="440">
+
+						<div class="cruise-item__text">
+
+							<h3 class="cruise-item__title">Морской круиз в Анапу</h3>
+
+							<p class="cruise-item__desc">
+
+								<span class="cruise-item__desc--bold">Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа<br>
+								<span class="cruise-item__desc--bold">Продолжительность:</span> 10 ч. 0 мин.
+
+							</p>
+
+							<p class="cruise-item__price"> 49 000 руб.</p>
+						</div>
+
+					</a>
+
+					<a href="#" class="cruise-item ">
+
+						<img class="cruise-item__img" src="images/content/novorossiisk.jpg" srcset="images/content/novorossiisk.jpg, images/content/novorossiisk@2x.jpg 2x" alt="Морской прогулка в Новороссийск" width="555" height="215">
+
+						<div class="cruise-item__text">
+							<h3 class="cruise-item__title">Морской круиз в Новороссийск</h3>
+
+							<p class="cruise-item__desc">
+
+								<span class="cruise-item__desc--bold">Маршрут:</span> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи<br>
+								<span class="cruise-item__desc--bold">Продолжительность:</span> 13 ч. 0 мин.
+							</p>
+
+
+							<p class="cruise-item__price"> 14 800 руб.</p>
+						</div>
+					</a>
+
+				</div>
+
+				<div class="container__right-col">
+
+					<a href="#" class="cruise-item cruise-item--small cruise-item--stock" >
+
+						<img class="cruise-item__img" src="images/content/progulka.jpg" srcset="images/content/progulka.jpg, images/content/progulka@2x.jpg 2x" alt="Морской прогулка с экскурсией" width="555" height="115">
+
+						<div class="cruise-item__text">
+							<h3 class="cruise-item__title">Обзорная морская прогулка с экскурсией</h3>
+
+							<p class="cruise-item__desc">
+
+								<span class="cruise-item__desc--bold">Маршрут:</span> Сочи-Адлер-Сочи (без высадки)<br>
+								<span class="cruise-item__desc--bold">Продолжительность:</span> 1 ч. 0 мин.
+							</p>
+
+							<p class="cruise-item__price "> 5 000 руб. <span class="cruise-item__price--discount">15 000 руб.</span></p>
+						</div>
+					</a>
+
+					<a href="#" class="cruise-item cruise-item--small cruise-item--discaunt">
+
+						<img class="cruise-item__img" src="images/content/gelenzhik.jpg" srcset="images/content/gelenzhik.jpg, images/content/gelenzhik@2x.jpg 2x" alt="Морской прогулка в Гелинжик" width="555" height="115">
+
+						<div class="cruise-item__text">
+							<h3 class="cruise-item__title">Морская прогулка в Геленжик</h3>
+
+							<p class="cruise-item__desc">
+
+								<span class="cruise-item__desc--bold">Маршрут:</span> Сочи-Туапсе-Геленджик<br>
+								<span class="cruise-item__desc--bold">Продолжительность:</span> 12 ч. 30 мин.
+
+							</p>
+
+							<p class="cruise-item__price "> 7 000 руб. <span class="cruise-item__price--discount">10 000 руб.</span></p>
+						</div>
+					</a>
+
+					<a href="#" class="cruise-item ">
+
+						<img class="cruise-item__img" src="images/content/abray.jpg" srcset="images/content/abray.jpg, images/content/abray@2x.jpg 2x" alt="Морская прогулка в Абрау-Дюрсо" width="555" height="215">
+
+						<div class="cruise-item__text">
+						<h3 class="cruise-item__title">Морская прогулка в Абрау-Дюрсо</h3>
+
+						<p class="cruise-item__desc">
+
+							<span class="cruise-item__desc--bold">Маршрут:</span> Сочи-Абрау-Дюрсо<br>
+							<span class="cruise-item__desc--bold">Продолжительность:</span> 11 ч. 0 мин.
+						</p>
+
+						<p class="cruise-item__price"> 14 800 руб.</p>
+						</div>
+					</a>
+
+				</div>
+
+			</div>
+
+			<button type="button" class="btn btn--more-gruise">Больше круизов</button>
+
+		</section>
+
+	</main>
+
+	<footer class="main-footer">
+		<div class="container">
+
+			<ul class="footer-link-list">
+				<li class="footer-link-list__item"><a href="#" class="footer-link-list__link">Вход для партнеров</a></li>
+				<li class="footer-link-list__item"><a href="#" class="footer-link-list__link">О компании</a></li>
+				<li class="footer-link-list__item"><a href="#" class="footer-link-list__link">Контакты</a></li>
+			</ul>
+
+			<div class="social-links">
+
+				<p class="social-links__title">Будь на связи:</p>
+
+				<ul class="social-list">
+
+					<li class="social-list__item">
+						<a class="social-links__link" href="#" aria-label="ссылка на сообщество вконтакте">
+
+							<span class="sr-only">наша страница Вконтакте</span>
+
+							<svg class="social-links__icon" width="30" height="30">
+								<use xlink:href="images/decor/symbols.svg#001-vk"/>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-list__item">
+						<a class="social-links__link" href="#" aria-label="ссылка на сообщество в Одноклассниках">
+
+							<span class="sr-only">наша страница на Одноклассниках</span>
+
+							<svg class="social-links__icon" width="30" height="30">
+								<use xlink:href="images/decor/symbols.svg#002-odnoklassniki-logo"/>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-list__item">
+						<a class="social-links__link" href="#" aria-label="ссылка на youtube канал">
+
+							<span class="sr-only">наша страница на youtube</span>
+
+							<svg class="social-links__icon" width="30" height="30">
+								<use xlink:href="images/decor/symbols.svg#003-youtube-logotype"/>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-list__item">
+						<a class="social-links__link" href="#" aria-label="ссылка на сообщество instagramme">
+
+							<span class="sr-only">ссылка на наш instagramm</span>
+
+							<svg class="social-links__icon" width="30" height="30">
+								<use xlink:href="images/decor/symbols.svg#004-instagram"/>
+							</svg>
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+
+			<div class="support-number support-number--footer">
+
+				<a class="support-number__link" title="Позвонить" href="tel:+7-922-885-22-17">8(922)8852217</a>
+
+				<p class="support-number__desc"> Круглосуточная поддержка</p>
+
+				<p class="copyright">&#169; 2016 «Городские Круизы»</p>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+	<div class="pop-up__overlay">
+
+		<div class="pop-up">
+
+			<button type="button" class="pop-up__close-btn" aria-label="закрыть окно просмотра круиза"></button>
+
+			<div class="pop-up__img-col">
+
+				<img class="pop-up__img--big" src="images/content/pop-up-img-1.jpg" srcset="images/content/pop-up-img-1.jpg, images/content/pop-up-img-1@2x.jpg 2x" alt="Морской круиз в Анапу" width="360" height="240">
+				<img class="pop-up__img" src="images/content/pop-up-img-2.jpg" srcset="images/content/pop-up-img-2.jpg, images/content/pop-up-img-2@2x.jpg 2x" alt="Морской круиз в Анапу" width="85" height="55">
+				<img class="pop-up__img" src="images/content/pop-up-img-3.jpg" srcset="images/content/pop-up-img-3.jpg, images/content/pop-up-img-3@2x.jpg 2x" alt="Морской круиз в Анапу" width="85" height="55">
+				<img class="pop-up__img" src="images/content/pop-up-img-4.jpg" srcset="images/content/pop-up-img-4.jpg, images/content/pop-up-img-4@2x.jpg 2x" alt="Морской круиз в Анапу" width="85" height="55">
+				<img class="pop-up__img" src="images/content/pop-up-img-5.jpg" srcset="images/content/pop-up-img-5.jpg, images/content/pop-up-img-5@2x.jpg 2x" alt="Морской круиз в Анапу" width="85" height="55">
+
+			</div>
+
+			<div class="pop-up__desc-col">
+
+				<h3 class="pop-up__title">Морская прогулка в Абрау-Дюрсо</h3>
+
+				<p>
+					<span>Маршрут:</span> Сочи - Абрау-Дюрсо
+					<span>Продолжительность:</span> 11 ч. 0 мин.
+				</p>
+
+				<p><span>Расписание:</span>
+					Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40
+					Отправление из Абрау-Дюрсо: ежедневно
+					в 12:25, 14:05, 15:45, 17:25, 19:05
+					Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от 1 часа 30 мин. - свободное время в Ласточкином гнезде
+					Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"
+				</p>
+
+				<p class="pop-up__price">14 800 руб.</p>
+
+				<a href="#" class="btn pop-up__btn">Бронирование</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="scripts/main.js"></script>
+
+</body>
+
+</html>
